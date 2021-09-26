@@ -39,10 +39,8 @@ public class Paciente extends Base {
     @JoinColumn(name = "id_direccion" , referencedColumnName = "id")
     private Direccion direccion;
 
-    @JsonManagedReference
-    @OneToMany(mappedBy = "paciente",
-               cascade = CascadeType.ALL,
-                orphanRemoval = true)
-    private List<Turno> turnos = new ArrayList<Turno>();
 
+    @OneToMany( cascade = CascadeType.ALL)
+    @JoinColumn(name = "paciente_id" )
+    private Set<Turno> turnos;
 }

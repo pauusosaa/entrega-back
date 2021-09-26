@@ -29,14 +29,8 @@ public class Turno extends Base{
 
     /* ======== relaciones ======== */
 
-    @JsonBackReference
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "fk_paciente", nullable = false)
-    private Paciente paciente;
-
-    @JsonManagedReference
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "fk_odontologo", nullable = false)
+    @JoinColumn(name = "odontologo_id")
     private Odontologo odontologo;
 
 }

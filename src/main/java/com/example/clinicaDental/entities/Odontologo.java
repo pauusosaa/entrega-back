@@ -33,10 +33,5 @@ public class Odontologo extends Base {
     @Column(name = "matricula")
     private String matricula;
 
-    /* ======== relaciones ======== */
-
-    @JsonBackReference
-    @OneToMany(mappedBy = "odontologo")
-    private List<Turno> turnos = new ArrayList<Turno>();
 
 }
