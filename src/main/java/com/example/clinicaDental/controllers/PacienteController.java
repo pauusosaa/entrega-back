@@ -8,11 +8,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
+import java.util.logging.Logger;
 
-
+@CrossOrigin
 @RestController
 @RequestMapping("/pacientes")
 public class PacienteController {
+
+    Logger logger = Logger.getLogger(String.valueOf(PacienteController.class));
 
     @Autowired
     IPacienteService pacienteService;
@@ -20,8 +23,10 @@ public class PacienteController {
     @GetMapping("/list")
     public ResponseEntity<?> getAll(){
         try {
+            logger.info("Se esta por realizar una llamada al service para buscar los pacientes");
             return ResponseEntity.status(HttpStatus.OK).body(pacienteService.getAll());
         }catch (Exception e){
+            logger.warning("No se pudo acceder al servicio");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
     }
@@ -30,8 +35,10 @@ public class PacienteController {
     @GetMapping("/{id}")
     public ResponseEntity<?> getOne(@PathVariable Long id){
         try {
+            logger.info("Se esta por realizar una llamada al service para buscar un paciente con id: " + id);
             return ResponseEntity.status(HttpStatus.OK).body(pacienteService.findById(id));
         }catch (Exception e){
+            logger.warning("No se pudo acceder al servicio");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
     }
@@ -39,20 +46,24 @@ public class PacienteController {
     @PostMapping("")
     public ResponseEntity<?> save(@RequestBody PacienteDTO pacienteDTO){
         try {
+            logger.info("Se esta por realizar una llamada al service para guardar un paciente");
             return ResponseEntity.status(HttpStatus.OK).body(pacienteService.save(pacienteDTO));
         }catch (Exception e){
+            logger.warning("No se pudo acceder al servicio");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<?> update(@PathVariable Long id, @RequestBody PacienteDTO pacienteDTO){
+        logger.info("Se esta por realizar una llamada al service para modificar un paciente");
         pacienteService.update(id, pacienteDTO);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable Long id){
+        logger.info("Se esta por realizar una llamada al service para eliminar el paciente con id: " + id);
         pacienteService.delete(id);
         return ResponseEntity.ok(HttpStatus.OK);
     }

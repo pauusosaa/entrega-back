@@ -1,15 +1,14 @@
 package com.example.clinicaDental.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDate;
-import java.time.LocalTime;
+
+
 
 @Entity
 @Table(name = "Turno")
@@ -29,8 +28,12 @@ public class Turno extends Base{
 
     /* ======== relaciones ======== */
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "odontologo_id")
+    @ManyToOne
+    @JoinColumn(name = "odontologo_fk", nullable = false)
     private Odontologo odontologo;
+
+    @ManyToOne
+    @JoinColumn(name = "paciente_fk", nullable = false)
+    private Paciente paciente;
 
 }

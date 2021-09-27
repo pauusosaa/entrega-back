@@ -14,6 +14,7 @@ public class PacienteDTO {
     private Integer DNI;
     private String fechaIngreso;
 
+    private Direccion direccion;
 
 
 }

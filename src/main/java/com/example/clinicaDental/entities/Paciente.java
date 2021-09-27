@@ -1,5 +1,6 @@
 package com.example.clinicaDental.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,8 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Set;
 
 @Entity
@@ -36,11 +36,12 @@ public class Paciente extends Base {
     /* ======== relaciones ======== */
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_direccion" , referencedColumnName = "id")
+    @JoinColumn(name = "id_direccion" , referencedColumnName = "id", nullable = false)
     private Direccion direccion;
 
 
-    @OneToMany( cascade = CascadeType.ALL)
-    @JoinColumn(name = "paciente_id" )
+
+    @OneToMany( mappedBy = "paciente")
+    @JsonIgnore
     private Set<Turno> turnos;
 }

@@ -18,10 +18,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 public abstract class Base implements Serializable {
 
-    /* ======== atributos ======== */
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
 }

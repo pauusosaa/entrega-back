@@ -1,13 +1,12 @@
 package com.example.clinicaDental.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Direccion")
@@ -30,6 +29,5 @@ public class Direccion extends Base{
 
     @Column(name = "provincia")
     private String provincia;
-
 
 }
