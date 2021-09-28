@@ -8,7 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
-import java.util.logging.Logger;
+
+import org.apache.log4j.*;
 
 @CrossOrigin
 @RestController
@@ -26,7 +27,7 @@ public class PacienteController {
             logger.info("Se esta por realizar una llamada al service para buscar los pacientes");
             return ResponseEntity.status(HttpStatus.OK).body(pacienteService.getAll());
         }catch (Exception e){
-            logger.warning("No se pudo acceder al servicio");
+            logger.error("No se pudo acceder al servicio");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
     }
@@ -38,7 +39,7 @@ public class PacienteController {
             logger.info("Se esta por realizar una llamada al service para buscar un paciente con id: " + id);
             return ResponseEntity.status(HttpStatus.OK).body(pacienteService.findById(id));
         }catch (Exception e){
-            logger.warning("No se pudo acceder al servicio");
+            logger.error("No se pudo acceder al servicio");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
     }
@@ -49,14 +50,14 @@ public class PacienteController {
             logger.info("Se esta por realizar una llamada al service para guardar un paciente");
             return ResponseEntity.status(HttpStatus.OK).body(pacienteService.save(pacienteDTO));
         }catch (Exception e){
-            logger.warning("No se pudo acceder al servicio");
+            logger.error("No se pudo acceder al servicio");
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<?> update(@PathVariable Long id, @RequestBody PacienteDTO pacienteDTO){
-        logger.info("Se esta por realizar una llamada al service para modificar un paciente");
+        logger.info("Se esta por realizar una llamada al service para modificar el paciente con id: "+ id);
         pacienteService.update(id, pacienteDTO);
         return ResponseEntity.ok(HttpStatus.OK);
     }

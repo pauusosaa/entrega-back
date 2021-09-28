@@ -1,11 +1,15 @@
 package com.example.clinicaDental.dto;
 
 import com.example.clinicaDental.entities.Direccion;
+
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class PacienteDTO {
 
     private Long id;

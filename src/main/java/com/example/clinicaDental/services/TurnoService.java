@@ -12,6 +12,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Logger;
 
 @Service
 public class TurnoService implements ITurnoService{
@@ -22,8 +23,11 @@ public class TurnoService implements ITurnoService{
     @Autowired
     ObjectMapper mapper;
 
+    Logger logger = Logger.getLogger(String.valueOf(TurnoService.class));
+
     @Transactional
     public TurnoDTO save(TurnoDTO turnoDTO){
+        logger.info("Se va a registrar un nuevo turno");
         Turno turno = mapper.convertValue(turnoDTO, Turno.class);
         turnoRepository.save(turno);
         return mapper.convertValue(turno, TurnoDTO.class);
@@ -31,6 +35,7 @@ public class TurnoService implements ITurnoService{
 
     @Transactional
     public Collection<TurnoDTO> getAll(){
+        logger.info("Se van a listar los turnos existentes");
         List<Turno> turnos = turnoRepository.findAll();
         Set<TurnoDTO> turnosDTO = new HashSet<>();
         for(Turno turno : turnos){

@@ -77,8 +77,8 @@ public class PacienteService implements IPacienteService {
         @Override
         @Transactional
         public Set<PacienteDTO> getPacienteByApellido(String apellido){
-          Set <Paciente> pacientes = pacienteRepository.getPacienteByApellido(apellido);
-          Set<PacienteDTO> pacientesDTO = new HashSet<>();
+            List<Paciente> pacientes = pacienteRepository.getPacienteByApellido(apellido);
+            Set<PacienteDTO> pacientesDTO = new HashSet<>();
             for(Paciente paciente : pacientes){
                 PacienteDTO pacienteDTO = mapper.convertValue(paciente, PacienteDTO.class);
                 pacientesDTO.add(pacienteDTO);

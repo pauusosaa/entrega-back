@@ -1,0 +1,1 @@
+[2021-09-2816:21:15] [ ERROR] [GlobalExceptionHandler:19] could not execute statement; SQL [n/a]; constraint [FK8FT4IYGTRW0T96KFWYDANERNP]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
