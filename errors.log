@@ -1,1 +1,50 @@
 [2021-09-2816:21:15] [ ERROR] [GlobalExceptionHandler:19] could not execute statement; SQL [n/a]; constraint [FK8FT4IYGTRW0T96KFWYDANERNP]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2021-09-2819:19:47] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2819:40:16] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:18:08] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:18:34] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:19:19] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:19:21] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:19:48] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:21:55] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:22:20] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:22:33] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:22:37] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:22:49] [ INFO ] [PacienteController:67] Se esta por realizar una llamada al service para eliminar el paciente con id: 3
+[2021-09-2820:22:59] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:23:07] [ INFO ] [PacienteController:67] Se esta por realizar una llamada al service para eliminar el paciente con id: 1
+[2021-09-2820:23:10] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:27:00] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:27:19] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:27:21] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:27:23] [ INFO ] [PacienteController:39] Se esta por realizar una llamada al service para buscar un paciente con id: 2
+[2021-09-2820:27:43] [ INFO ] [PacienteController:60] Se esta por realizar una llamada al service para modificar el paciente con id: 2
+[2021-09-2820:27:44] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:27:52] [ INFO ] [PacienteController:39] Se esta por realizar una llamada al service para buscar un paciente con id: 1
+[2021-09-2820:30:58] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:31:00] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:31:19] [ INFO ] [PacienteController:39] Se esta por realizar una llamada al service para buscar un paciente con id: 1
+[2021-09-2820:39:10] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2820:43:29] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2820:43:33] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2821:11:18] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2821:13:11] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2821:21:23] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2821:21:26] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:21:30] [ INFO ] [OdontologoController:37] Se esta por realizar una llamada al service para buscar un odontologo
+[2021-09-2821:21:38] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:21:42] [ INFO ] [OdontologoController:65] Se esta por realizar una llamada al service para eliminar el odontologo con id: 1
+[2021-09-2821:24:04] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2821:24:07] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:24:10] [ INFO ] [OdontologoController:37] Se esta por realizar una llamada al service para buscar un odontologo
+[2021-09-2821:24:14] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:24:19] [ INFO ] [OdontologoController:37] Se esta por realizar una llamada al service para buscar un odontologo
+[2021-09-2821:24:26] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:24:41] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2821:24:43] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:26:35] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2821:26:37] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:26:39] [ INFO ] [OdontologoController:37] Se esta por realizar una llamada al service para buscar un odontologo
+[2021-09-2821:26:45] [ INFO ] [OdontologoController:58] Se esta por realizar una llamada al service para modificar el odontologo con id: 1
+[2021-09-2821:26:45] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2821:27:00] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
