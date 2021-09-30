@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 @Entity
@@ -21,10 +22,10 @@ public class Turno extends Base{
     /* ======== atributos ======== */
 
     @Column(name = "fecha_turno")
-    private String fechaTurno;
+    private LocalDate fechaTurno;
 
     @Column(name = "hora_turno")
-    private String horaTurno;
+    private LocalTime horaTurno;
 
     /* ======== relaciones ======== */
 

@@ -48,3 +48,25 @@
 [2021-09-2821:26:45] [ INFO ] [OdontologoController:58] Se esta por realizar una llamada al service para modificar el odontologo con id: 1
 [2021-09-2821:26:45] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
 [2021-09-2821:27:00] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2921:33:47] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2921:34:13] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2921:34:41] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2921:44:37] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2921:44:44] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2921:45:03] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2921:45:07] [ INFO ] [OdontologoController:25] Se esta por realizar una llamada al service para buscar los odontologos
+[2021-09-2921:45:11] [ INFO ] [PacienteController:27] Se esta por realizar una llamada al service para buscar los pacientes
+[2021-09-2921:48:04] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2921:48:14] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2921:54:06] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2921:54:18] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2921:56:42] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2921:56:55] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2922:02:37] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2922:02:52] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2922:33:53] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente
+[2021-09-2922:34:03] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2922:34:20] [ ERROR] [GlobalExceptionHandler:19] Request method 'GET' not supported
+[2021-09-2922:35:12] [ ERROR] [GlobalExceptionHandler:19] Request method 'GET' not supported
+[2021-09-2922:51:19] [ INFO ] [OdontologoController:48] Se esta por realizar una llamada al service para guardar un odontologo
+[2021-09-2922:51:32] [ INFO ] [PacienteController:50] Se esta por realizar una llamada al service para guardar un paciente

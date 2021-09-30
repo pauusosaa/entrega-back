@@ -1,6 +1,8 @@
 package com.example.clinicaDental.services;
 
+import com.example.clinicaDental.dto.PacienteDTO;
 import com.example.clinicaDental.dto.TurnoDTO;
+import com.example.clinicaDental.entities.Paciente;
 import com.example.clinicaDental.entities.Turno;
 import com.example.clinicaDental.repositories.ITurnoRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -8,10 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.logging.Logger;
 
 @Service
@@ -43,5 +42,13 @@ public class TurnoService implements ITurnoService{
             turnosDTO.add(turnoDTO);
         }
         return turnosDTO;
+    }
+
+
+
+    @Override
+    @Transactional
+    public void delete(Long id){
+        turnoRepository.deleteById(id);
     }
 }
